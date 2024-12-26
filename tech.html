@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore India's Gems</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            color: #333;
+            overflow-x: hidden;
+        }
+        header {
+            background: linear-gradient(45deg, #ff6f61, #ffb347);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            animation: fadeInDown 1s ease-in-out;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .destination {
+            background: #fff;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            transform: scale(1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .destination:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .destination img {
+            width: 100%; /* Ensures the images fill the container */
+            height: 300px; /* Set a fixed height for all images */
+            object-fit: cover; /* Ensures the image is scaled to fill the box without distortion */
+            border-radius: 15px;
+            margin-bottom: 15px;
+            transition: transform 0.5s ease-in-out;
+        }
+        .destination img:hover {
+            transform: scale(1.1);
+        }
+        .destination h2 {
+            color: #ff6f61;
+            margin: 0 0 10px;
+            font-size: 1.8rem;
+        }
+        .destination p {
+            color: #555;
+            line-height: 1.6;
+        }
+        footer {
+            text-align: center;
+            background: #ffb347;
+            color: #fff;
+            padding: 10px 0;
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explore India's Gems</h1>
+    </header>
+    <div class="container">
+        <div class="destination">
+            <img src="https://media.istockphoto.com/id/1270774245/photo/hampi-stone-chariot-the-antique-stone-art-piece-from-unique-angle-with-amazing-blue-sk.jpg?s=612x612&w=0&k=20&c=LugJgTiUd9y_8MO2KDQ2I4IvOD_7BH5x_R8iRApqEUg=" alt="Hampi">
+            <h2>Hampi</h2>
+            <p>Hampi, a UNESCO World Heritage Site in Karnataka, is famous for its ancient temples and ruins from the Vijayanagara Empire. It is a treasure trove of history and architecture, perfect for history enthusiasts and photographers.</p>
+        </div>
+        <div class="destination">
+            <img src="https://media.istockphoto.com/id/172124032/photo/mysore-palace-at-dusk.jpg?s=612x612&w=0&k=20&c=paO74C_dVsY14IbK0RNqs0TD-lSteQy-AW5CnQFEb_4=" alt="Mysore">
+            <h2>Mysore</h2>
+            <p>Mysore, the 'City of Palaces', offers a glimpse into the royal heritage of Karnataka. The Mysore Palace, Chamundi Hills, and bustling markets are must-visit attractions.</p>
+        </div>
+        <div class="destination">
+            <img src="https://nagaon.assam.gov.in/sites/default/files/inline-images/gate.JPG" alt="Kaziranga National Park">
+            <h2>Kaziranga National Park</h2>
+            <p>Kaziranga, located in Assam, is renowned for its population of the Indian one-horned rhinoceros. The park is a haven for wildlife enthusiasts and nature lovers.</p>
+        </div>
+        <div class="destination">
+            <img src="https://s7ap1.scene7.com/is/image/incredibleindia/trayambakeshwar-temple-rishikesh-uttrakhand-1-attr-hero?qlt=82&ts=1726646312895" alt="Rishikesh">
+            <h2>Rishikesh</h2>
+            <p>Known as the 'Yoga Capital of the World', Rishikesh is a serene town in Uttarakhand, offering spiritual retreats, adventure sports like river rafting, and scenic beauty.</p>
+        </div>
+        <div class="destination">
+            <img src="https://i.ytimg.com/vi/cU6F3dffo2Y/maxresdefault.jpg" alt="Jaipur">
+            <h2>Jaipur</h2>
+            <p>Jaipur, the 'Pink City' of Rajasthan, is famous for its grand palaces, historic forts, and vibrant bazaars. It is part of India’s Golden Triangle tourist circuit.</p>
+        </div>
+        <div class="destination">
+            <img src="https://www.thehosteller.com/_next/image/?url=https%3A%2F%2Fstatic.thehosteller.com%2Fhostel%2Fimages%2Fsteptodown.com412659%20(1)().jpg%2Fsteptodown.com412659%20(1)()-1707806388550.jpg&w=2048&q=75" alt="Amritsar">
+            <h2>Amritsar</h2>
+            <p>Amritsar in Punjab is home to the iconic Golden Temple and Jallianwala Bagh. It is a spiritual and historical hub for visitors.</p>
+        </div>
+        <div class="destination">
+            <img src="https://www.noblehousetours.com/wp-content/uploads/2017/10/lambasingi-kashmir-of-andhra-pradesh.jpg" alt="Lambasingi">
+            <h2>Lambasingi</h2>
+            <p>Often referred to as the 'Kashmir of Andhra Pradesh', Lambasingi is a picturesque village known for its misty hills, lush greenery, and cool climate.</p>
+        </div>
+        <div class="destination">
+            <img src="https://stokpalaceheritage.com/blog/wp-content/uploads/2022/03/FeatureLaddakhTemples-Pallavi-Jayaraman-scaled.jpg" alt="Ladakh">
+            <h2>Ladakh</h2>
+            <p>Ladakh, located in the northernmost region of India, is known for its breathtaking landscapes, rugged mountains, and Buddhist monasteries. The Pangong Lake and Nubra Valley are must-see attractions.</p>
+        </div>
+        <div class="destination">
+            <img src="https://img.veenaworld.com/wp-content/uploads/2023/01/shutterstock_2044050407-scaled.jpg" alt="Kashmir">
+            <h2>Kashmir</h2>
+            <p>Kashmir, often called 'Paradise on Earth', is famous for its lush valleys, snow-capped mountains, and serene Dal Lake. The Shankaracharya Temple and Mughal Gardens are key attractions in this heavenly region.</p>
+        </div>
+        <div class="destination">
+            <img src="https://travelthreads.co.in/wp-content/uploads/2018/09/Delhi-Humayun-Tomb..jpg" alt="Delhi">
+            <h2>Delhi</h2>
+            <p>Delhi, the capital city of India, blends history and modernity. The Red Fort, India Gate, Qutub Minar, and bustling markets make it a vibrant cultural hub for travelers.</p>
+        </div>
+
+        <!-- Adding New Destinations -->
+
+        <div class="destination">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Shimla_early_morning.jpg" alt="Shimla">
+            <h2>Shimla</h2>
+            <p>Shimla, the capital of Himachal Pradesh, is known for its colonial charm, scenic vistas, and the famous Ridge and Mall Road. It's a favorite hill station for tourists seeking cool weather and relaxation.</p>
+        </div>
+        <div class="destination">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Shillong_Clouds.jpg" alt="Shillong">
+            <h2>Shillong</h2>
+            <p>Shillong, the 'Scotland of the East', is a hill station in Meghalaya with breathtaking landscapes, cascading waterfalls, and vibrant culture. It is a must-visit for nature lovers and adventure enthusiasts.</p>
+        </div>
+        <div class="destination">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Imphal-India.jpg" alt="Imphal">
+            <h2>Imphal</h2>
+            <p>Imphal, the capital of Manipur, is known for its beautiful Loktak Lake, historical monuments, and rich culture. It’s a peaceful destination for those interested in Northeast India's heritage.</p>
+        </div>
+        <div class="destination">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Dimapur_Clock_Tower.jpg" alt="Dimapur">
+            <h2>Dimapur</h2>
+            <p>Dimapur, located in Nagaland, is known for its vibrant culture and rich history. It serves as a gateway to Nagaland, offering visitors a glimpse of tribal traditions and beautiful landscapes.</p>
+        </div>
+        <div class="destination">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Udaipur_Palace.jpg" alt="Udaipur">
+            <h2>Udaipur</h2>
+            <p>Udaipur, known as the 'City of Lakes', is a romantic city in Rajasthan with its royal palaces, lakes, and temples. The City Palace and Lake Pichola are the city's prime attractions.</p>
+        </div>
+        <div class="destination">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Spiti_Valley.jpg" alt="Spiti Valley">
+            <h2>Spiti Valley</h2>
+            <p>Spiti Valley, located in Himachal Pradesh, is a remote and picturesque region known for its rugged landscapes, Buddhist monasteries, and adventure tourism. It’s ideal for trekkers and nature lovers.</p>
+        </div>
+        <div class="destination">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Ranthambore_national_park.jpg" alt="Ranthambore">
+            <h2>Ranthambore</h2>
+            <p>Ranthambore National Park, located in Rajasthan, is famous for its tigers and rich wildlife. It offers excellent safari experiences amidst nature's beauty.</p>
+        </div>
+        <div class="destination">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Junagadh_Fort.JPG" alt="Junagadh">
+            <h2>Junagadh</h2>
+            <p>Junagadh in Gujarat is famous for its historical forts, temples, and proximity to the Gir National Park, home of the Asiatic lions. It offers a blend of history and wildlife.</p>
+        </div>
+        <div class="destination">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Jim_Corbett_National_Park.jpg" alt="Jim Corbett National Park">
+            <h2>Jim Corbett National Park</h2>
+            <p>Jim Corbett National Park, located in Uttarakhand, is one of the oldest national parks in India. It is renowned for its Bengal tigers and rich biodiversity, making it a must-visit for wildlife enthusiasts.</p>
+        </div>
+
+    </div>
+    <footer>
+        <p>&copy; 2024 Explore India's Gems</p>
+    </footer>
+</body>
+</html>
