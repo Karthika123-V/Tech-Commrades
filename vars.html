@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore India's gems including Hampi, Mysore, Rishikesh, and more. Discover historical landmarks, serene towns, and vibrant cities.">
+    <meta name="keywords" content="India travel, Hampi, Mysore, Jaipur, Kaziranga, Rishikesh, Lambasingi,Amritsar, Kashmir,Ladakh">
+
+
+    <title>Explore India's Gems</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            color: #333;
+            overflow-x: hidden;
+        }
+        header {
+            background: linear-gradient(45deg, #ff6f61, #ffb347);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            animation: fadeInDown 1s ease-in-out;
+        }
+nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 0;
+            margin: 10px 0 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .destination {
+            background: #fff;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            transform: scale(1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .destination:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .destination img {
+            max-width: 100%;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            transition: transform 0.5s ease-in-out;
+        }
+        .destination img:hover {
+            transform: scale(1.1);
+        }
+        .destination h2 {
+            color: #ff6f61;
+            margin: 0 0 10px;
+            font-size: 1.8rem;
+        }
+        .destination p {
+            color: #555;
+            line-height: 1.6;
+        }
+        footer {
+            text-align: center;
+            background: #ffb347;
+            color: #fff;
+            padding: 10px 0;
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            color: #333;
+            overflow-x: hidden;
+        }
+        header {
+            background: linear-gradient(45deg, #ff6f61, #ffb347);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            animation: fadeInDown 1s ease-in-out;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .destination {
+            background: #fff;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            transform: scale(1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+			
+        }
+        .destination:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .destination img {
+            max-width: 100%;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            transition: transform 0.5s ease-in-out;
+        }
+        .destination img:hover {
+            transform: scale(1.1);
+        }
+        .destination h2 {
+            color: #ff6f61;
+            margin: 0 0 10px;
+            font-size: 1.8rem;
+        }
+        .destination p {
+            color: #555;
+            line-height: 1.6;
+        }
+        footer {
+            text-align: center;
+            background: #ffb347;
+            color: #fff;
+            padding: 10px 0;
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+        button:hover {
+            background: #ffb347;
+        }
+
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explore India's Gems</h1>
+<nav>
+            <ul>
+                <li><a href="#hampi">Hampi</a></li>
+                <li><a href="#mysore">Mysore</a></li>
+                <li><a href="#kaziranga">Kaziranga</a></li>
+                <li><a href="#rishikesh">Rishikesh</a></li>
+                <li><a href="#jaipur">Jaipur</a></li>
+                <li><a href="#lambasingi">Lambasingi</a></li>
+				<li><a href="#Kashmir">Kashmir</a></li>
+                <li><a href="#Ladakh">Ladakh</a></li>
+                <li><a href="#Delhi">Delhi</a></li>
+                <li><a href="#Goa">Rishikesh</a></li>
+                <li><a href="#Varanasi">Varanasi</a></li>
+                <li><a href="#Jaisalmer">Jaisalmer</a></li>
+				<li><a href="#Agra">Agra</a></li>
+                <li><a href="#Rann of Kutch">Rann of Kutch</a></li>
+                <li><a href="#Amritsar">Amritsar</a></li>
+                <li><a href="#Shillong">Shillong</a></li>
+                <li><a href="#Shimla">Shimla</a></li>
+                <li><a href="#Spiti Valley">Spiti Valley</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <div class="container">
+        <div class="destination" id="Hampi">
+           <center> <img src="https://wallpapercave.com/wp/wp7665079.jpg" alt="Hampi" width="1200" height = "600" ></center>
+            <h2>Hampi</h2>
+            <p>Hampi, a UNESCO World Heritage Site in Karnataka, is famous for its ancient temples and ruins from the Vijayanagara Empire. It is a treasure trove of history and architecture, perfect for history enthusiasts and photographers.</p>
+<a href="hampi.html" class="read-more"><button style="background-color: #ff6f61; color: #fff; border: none; padding: 10px 20px; font-size: 1rem; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;" onmouseover="this.style.backgroundColor='#ff3d2e';"  onmouseout="this.style.backgroundColor='#ff6f61';"> Read More </button></a><br>
+
+
+
+        </div>
+        <div class="destination" id="Mysore">
+            <img src="https://media.istockphoto.com/id/172124032/photo/mysore-palace-at-dusk.jpg?s=612x612&w=0&k=20&c=paO74C_dVsY14IbK0RNqs0TD-lSteQy-AW5CnQFEb_4=" alt="Mysore" width="1200" height = "600">
+            <h2>Mysore</h2>
+            <p>Mysore, the 'City of Palaces', offers a glimpse into the royal heritage of Karnataka. The Mysore Palace, Chamundi Hills, and bustling markets are must-visit attractions.</p>
+<a href="mysore.html" class="read-more"><button style="background-color: #ff6f61; color: #fff; border: none; padding: 10px 20px; font-size: 1rem; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;" 
+            onmouseover="this.style.backgroundColor='#ff3d2e';" 
+            onmouseout="this.style.backgroundColor='#ff6f61';">
+        Read More
+    </button>
+
+</a><br>
+
+        </div>
+        <div class="destination" id="Kaziranga National Park">
+            <img src="http://tourmyodisha.com/wp-content/uploads/2022/12/Kaziranga-National-Park-1-1024x611.jpg" alt="Kaziranga National Park" width="1200" height = "600">
+            <h2>Kaziranga National Park</h2>
+            <p>Kaziranga, located in Assam, is renowned for its population of the Indian one-horned rhinoceros. The park is a haven for wildlife enthusiasts and nature lovers.</p>
+<a href="koziranga.html" class="read-more"><button style="background-color: #ff6f61; color: #fff; border: none; padding: 10px 20px; font-size: 1rem; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;" 
+            onmouseover="this.style.backgroundColor='#ff3d2e';" 
+            onmouseout="this.style.backgroundColor='#ff6f61';">
+        Read More
+    </button>
+	</a>
+
+        </div>
+        <div class="destination" id="Rishikesh">
+            <img src="https://s7ap1.scene7.com/is/image/incredibleindia/trayambakeshwar-temple-rishikesh-uttrakhand-1-attr-hero?qlt=82&ts=1726646312895" alt="Rishikesh" width="1200" height = "600">
+            <h2>Rishikesh</h2>
+            <p>Known as the 'Yoga Capital of the World', Rishikesh is a serene town in Uttarakhand, offering spiritual retreats, adventure sports like river rafting, and scenic beauty.</p>
+<a href="rishikesh.html" class="read-more"><button
+style="background-color: #ff6f61; color:#fff; padding: 10px 20px; font-size: 1rem; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;" 
+            onmouseover="this.style.backgroundColor='#ff3d2e';" 
+            onmouseout="this.style.backgroundColor='#ff6f61';">
+        Read More
+    </button>
+</a>
+
+        </div>
+        <div class="destination" id="Jaipur">
+            <img src="https://i.ytimg.com/vi/cU6F3dffo2Y/maxresdefault.jpg" alt="Jaipur" width="1200" height = "600">
+            <h2>Jaipur</h2>
+            <p>Jaipur, the 'Pink City' of Rajasthan, is famous for its grand palaces, historic forts, and vibrant bazaars. It is part of India’s Golden Triangle tourist circuit.</p>
+<a href="jaipur.html" class="read-more"><button style="background-color: #ff6f61; color: #fff; border: none; padding: 10px 20px; font-size: 1rem; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;" 
+            onmouseover="this.style.backgroundColor='#ff3d2e';" 
+            onmouseout="this.style.backgroundColor='#ff6f61';">
+        Read More
+    </button>
+</a>
+        </div>
+        <div class="destination" id="Amritsar">
+            <img src="https://www.thehosteller.com/_next/image/?url=https%3A%2F%2Fstatic.thehosteller.com%2Fhostel%2Fimages%2Fsteptodown.com412659%20(1)().jpg%2Fsteptodown.com412659%20(1)()-1707806388550.jpg&w=2048&q=75" alt="Amritsar" width="1200" height = "600">
+            <h2>Amritsar</h2>
+            <p>Amritsar in Punjab is home to the iconic Golden Temple and Jallianwala Bagh. It is a spiritual and historical hub for visitors.</p>
+<a href="amristar.html" class="read-more"><button style="background-color: #ff6f61; color: #fff; border: none; padding: 10px 20px; font-size: 1rem; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;" 
+            onmouseover="this.style.backgroundColor='#ff3d2e';" 
+            onmouseout="this.style.backgroundColor='#ff6f61';">
+        Read More
+    </button>
+</a>
+        </div>
+        <div class="destination" id="Lambasingi">
+            <img src="https://www.noblehousetours.com/wp-content/uploads/2017/10/lambasingi-kashmir-of-andhra-pradesh.jpg" alt="Lambasingi" width="1200" height = "600">
+            <h2>Lambasingi</h2>
+            <p>Often referred to as the 'Kashmir of Andhra Pradesh', Lambasingi is a picturesque village known for its misty hills, lush greenery, and cool climate.</p>
+<a href="lambasigi.html" class="read-more"><button style="background-color: #ff6f61; color: #fff; border: none; padding: 10px 20px; font-size: 1rem; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;" 
+            onmouseover="this.style.backgroundColor='#ff3d2e';" 
+            onmouseout="this.style.backgroundColor='#ff6f61';">
+        Read More
+    </button>
+</a>
+			 <div class="destination" id="Ladakh">
+            <img src="https://stokpalaceheritage.com/blog/wp-content/uploads/2022/03/FeatureLaddakhTemples-Pallavi-Jayaraman-scaled.jpg" alt="Ladakh" width="1200" height = "600">
+            <h2>Ladakh</h2>
+            <p>Ladakh, located in the northernmost region of India, is known for its breathtaking landscapes, rugged mountains, and Buddhist monasteries. The Pangong Lake and Nubra Valley are must-see attractions.</p>
+<a href="ladakh.html" class="read-more"><button style="background-color: #ff6f61; color: #fff; border: none; padding: 10px 20px; font-size: 1rem; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;" 
+            onmouseover="this.style.backgroundColor='#ff3d2e';" 
+            onmouseout="this.style.backgroundColor='#ff6f61';">
+        Read More
+    </button>
+</a>
+       
+        </div>
+        <div class="destination" id="Kashmir">
+            <img src="https://img.veenaworld.com/wp-content/uploads/2023/01/shutterstock_2044050407-scaled.jpg" alt="Kashmir" width="1200" height = "600">
+            <h2>Kashmir</h2>
+            <p>Kashmir, often called 'Paradise on Earth', is famous for its lush valleys, snow-capped mountains, and serene Dal Lake. The Shankaracharya Temple and Mughal Gardens are key attractions in this heavenly region.</p>
+<a href="kashmir.html" class="read-more"><button style="background-color: #ff6f61; color: #fff; border: none; padding: 10px 20px; font-size: 1rem; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;" 
+          onmouseover="this.style.backgroundColor='#ff3d2e';" 
+            onmouseout="this.style.backgroundColor='#ff6f61';">
+        Read More
+    </button>
+</a>
+        </div>
+        <div class="destination" id="Delhi">
+            <img src="https://travelthreads.co.in/wp-content/uploads/2018/09/Delhi-Humayun-Tomb..jpg" alt="Delhi" width="1200" height = "600">
+            <h2>Delhi</h2>
+            <p>Delhi, the capital city of India, blends history and modernity. The Red Fort, India Gate, Qutub Minar, and bustling markets make it a vibrant cultural hub for travelers.</p>
+<a href="delhi.html" class="read-more"><button style="background-color: #ff6f61; color: #fff; border: none; padding: 10px 20px; font-size: 1rem; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;" 
+            onmouseover="this.style.backgroundColor='#ff3d2e';" 
+            onmouseout="this.style.backgroundColor='#ff6f61';">
+        Read More
+    </button>
+</a>
+
+        </div>
+        <div class="destination" id="Sikkim">
+            <img src="http://4.bp.blogspot.com/_EoUAvaqN-Ek/TPN_Krfy_BI/AAAAAAAAAlA/up7uzd49iYg/s1600/kanchenjunga.jpg" alt="Sikkim" width="1200" height = "600">
+            <h2>Sikkim</h2>
+            <p>Sikkim, nestled in the Himalayas, is known for its spectacular views of Mount Kanchenjunga, monasteries, and tea gardens. It is a haven for trekkers and nature lovers.</p>
+        <a href="mysore.html" class="read-more"><button style="background-color: #ff6f61; color: #fff; border: none; padding: 10px 20px; font-size: 1rem; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;" 
+            onmouseover="this.style.backgroundColor='#ff3d2e';" 
+            onmouseout="this.style.backgroundColor='#ff6f61';">
+        Read More
+    </button>
+	</a>
+		</div>
+        <div class="destination" id="Meghalaya">
+            <img src="https://www.oyorooms.com/travel-guide/wp-content/uploads/2021/07/Meghalaya_2.jpg" alt="Meghalaya" width="1200" height = "600">
+            <h2>Meghalaya</h2>
+            <p>Meghalaya, the 'Abode of Clouds', is a paradise for nature lovers. Its lush forests, caves, and living root bridges make it a unique destination for adventurous travelers.</p>
+        <a href="mysore.html" class="read-more"><button style="background-color: #ff6f61; color: #fff; border: none; padding: 10px 20px; font-size: 1rem; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;" 
+            onmouseover="this.style.backgroundColor='#ff3d2e';" 
+            onmouseout="this.style.backgroundColor='#ff6f61';">
+        Read More
+    </button>
+	</a>
+		</div>
+        <div class="destination" id="Kerala">
+            <img src="https://irisholidays.com/keralatourism/wp-content/uploads/2014/02/best-time-to-visit-kerala-backwaters-1024x576.jpg" alt="Kerala" width="1200" height = "600">
+            <h2>Kerala</h2>
+            <p>Kerala, known as 'God's Own Country', offers tranquil backwaters, pristine beaches, and lush landscapes. The Ayurvedic treatments and houseboat cruises are famous attractions.</p>
+        <a href="mysore.html" class="read-more"><button style="background-color: #ff6f61; color: #fff; border: none; padding: 10px 20px; font-size: 1rem; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;" 
+            onmouseover="this.style.backgroundColor='#ff3d2e';" 
+            onmouseout="this.style.backgroundColor='#ff6f61';">
+        Read More
+    </button>
+	</a>
+		</div>
+        <div class="destination">
+            <img src="https://www.sailingeurope.com/blog/wp-content/uploads/2015/05/M_Thailand.jpg" alt="Andaman" width="1200" height = "600">
+            <h2>Andaman</h2>
+            <p>The Andaman Islands, located in the Bay of Bengal, are famous for their white sandy beaches, crystal-clear waters, and coral reefs. It's a great destination for water sports like snorkeling and scuba diving.</p>
+        <a href="mysore.html" class="read-more"><button style="background-color: #ff6f61; color: #fff; border: none; padding: 10px 20px; font-size: 1rem; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;" 
+            onmouseover="this.style.backgroundColor='#ff3d2e';" 
+            onmouseout="this.style.backgroundColor='#ff6f61';">
+        Read More
+    </button>
+	</a>
+		</div>
+        <div class="destination">
+               <img src="https://www.mistay.in/travel-blog/content/images/2020/06/cover-goa-mistay-hotel-rooms.jpg" alt="GOA" width="1200" height="600">
+             <h2>Goa</h2>
+            <p>Goa, the land of beaches, is a popular tourist destination known for its vibrant nightlife, Portuguese heritage, and serene coastal beauty. Perfect for party lovers and beach enthusiasts.</p>
+        <a href="mysore.html" class="read-more"><button style="background-color: #ff6f61; color: #fff; border: none; padding: 10px 20px; font-size: 1rem; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;" 
+            onmouseover="this.style.backgroundColor='#ff3d2e';" 
+            onmouseout="this.style.backgroundColor='#ff6f61';">
+        Read More
+    </button>
+	</a>
+		</div>
+        <div class="destination">
+            <img src="https://www.visittnt.com/images/agra/agra-travel-guide.jpg" alt="AGRA" width="1200" height="600" >
+            <h2>Agra</h2>
+            <p>Agra, home to the iconic Taj Mahal, is a symbol of eternal love. Located in Uttar Pradesh, it offers a blend of Mughal architecture and rich history.</p>
+        <a href="mysore.html" class="read-more"><button style="background-color: #ff6f61; color: #fff; border: none; padding: 10px 20px; font-size: 1rem; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;" 
+            onmouseover="this.style.backgroundColor='#ff3d2e';" 
+            onmouseout="this.style.backgroundColor='#ff6f61';">
+        Read More
+    </button>
+	</a>
+		</div>
+        <div class="destination">
+<img src="https://www.micato.com/wp-content/uploads/2023/06/Holycityofvaranasi-2.png" alt="Varanasi" width="1150" height="600" >
+
+           
+            <h2>Varanasi</h2>
+            <p>Varanasi, the spiritual capital of India, is famous for its ghats, temples, and vibrant cultural life. Witness the mesmerizing Ganga Aarti at the Dashashwamedh Ghat.</p>
+        <a href="mysore.html" class="read-more"><button style="background-color: #ff6f61; color: #fff; border: none; padding: 10px 20px; font-size: 1rem; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;" 
+            onmouseover="this.style.backgroundColor='#ff3d2e';" 
+            onmouseout="this.style.backgroundColor='#ff6f61';">
+        Read More
+    </button>
+	</a>
+		</div>
+        <div class="destination">
+<img src="https://www.transindiatravels.com/wp-content/uploads/gadi-sagar-lake.jpg" alt="JAISALMER" width="1200" height="600" >
+
+
+            
+            <h2>Jaisalmer</h2>
+            <p>Jaisalmer, the 'Golden City' of Rajasthan, is renowned for its stunning sand dunes, the Jaisalmer Fort, and intricate havelis, offering a unique desert experience.</p>
+        <a href="mysore.html" class="read-more"><button style="background-color: #ff6f61; color: #fff; border: none; padding: 10px 20px; font-size: 1rem; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;" 
+            onmouseover="this.style.backgroundColor='#ff3d2e';" 
+            onmouseout="this.style.backgroundColor='#ff6f61';">
+        Read More
+    </button>
+	</a>
+		</div>
+        <div class="destination">
+            <img src="https://www.gujarattourism.com/content/gujrattourism/en/tours/customized-tour-offered-by-tcgl/beautiful-kutch/_jcr_content/root/responsivegrid/tourbanner.coreimg.jpeg/1594791960748/rann-utsav-tent-city-(9).jpeg" alt="Rann of Kutch" width="1200" height="600" >
+
+
+            <h2>Rann of Kutch</h2>
+            <p>The Rann of Kutch in Gujarat is a vast white salt desert, famous for its surreal beauty during the Rann Utsav. It is a photographer's paradise.</p>
+        <a href="mysore.html" class="read-more"><button style="background-color: #ff6f61; color: #fff; border: none; padding: 10px 20px; font-size: 1rem; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;" 
+            onmouseover="this.style.backgroundColor='#ff3d2e';" 
+            onmouseout="this.style.backgroundColor='#ff6f61';">
+        Read More
+    </button>
+	</a>
+		</div>
+        <div class="destination">
+<img src="https://indiator.com/tourist-places/wp-content/uploads/2019/11/The-Caves-Of-Aurangabad-1024x768.jpg" alt="Aurangabad" width="1200" height="600" >
+
+
+            
+            <h2>Aurangabad</h2>
+            <p>Aurangabad in Maharashtra is known for the Ajanta and Ellora Caves, UNESCO World Heritage Sites showcasing ancient art and architecture.</p>
+        <a href="mysore.html" class="read-more"><button style="background-color: #ff6f61; color: #fff; border: none; padding: 10px 20px; font-size: 1rem; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;" 
+            onmouseover="this.style.backgroundColor='#ff3d2e';" 
+            onmouseout="this.style.backgroundColor='#ff6f61';">
+        Read More
+    </button>
+	</a>
+		</div>
+        <div class="destination">
+<img src="https://beyonder.travel/wp-content/uploads/2020/06/Sundarban_river.jpg" alt="Sundarbans" width="1200" height="600" >
+
+            <h2>Sundarbans</h2>
+            <p>The Sundarbans, a UNESCO World Heritage Site in West Bengal, is the world's largest mangrove forest, home to the Royal Bengal Tiger and diverse wildlife.</p>
+        </div>
+         <div class="destination">
+            <img src="http://www.bontravelindia.com/wp-content/uploads/2021/10/Dalhousie-Himachal-Pradesh.jpg" alt="Shimla"  width="1200" height="600">
+            <h2>Shimla</h2>
+            <p>Shimla, the capital of Himachal Pradesh, is known for its colonial charm, scenic vistas, and the famous Ridge and Mall Road. It's a favorite hill station for tourists seeking cool weather and relaxation.</p>
+        <a href="mysore.html" class="read-more"><button style="background-color: #ff6f61; color: #fff; border: none; padding: 10px 20px; font-size: 1rem; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;" 
+            onmouseover="this.style.backgroundColor='#ff3d2e';" 
+            onmouseout="this.style.backgroundColor='#ff6f61';">
+        Read More
+    </button>
+	</a>
+		</div>
+        <div class="destination">
+            <img src="https://www.captureatrip.com/_next/image?url=https:%2F%2Fcaptureatrip-cms-storage.s3.ap-south-1.amazonaws.com%2FShillong_Waterfall_9b17d543c4.jpg&w=1200&q=50" alt="Shillong"  width="1200" height="600">
+            <h2>Shillong</h2>
+            <p>Shillong, the 'Scotland of the East', is a hill station in Meghalaya with breathtaking landscapes, cascading waterfalls, and vibrant culture. It is a must-visit for nature lovers and adventure enthusiasts.</p>
+        <a href="mysore.html" class="read-more"><button style="background-color: #ff6f61; color: #fff; border: none; padding: 10px 20px; font-size: 1rem; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;" 
+            onmouseover="this.style.backgroundColor='#ff3d2e';" 
+            onmouseout="this.style.backgroundColor='#ff6f61';">
+        Read More
+    </button>
+	</a>
+		</div>
+        <div class="destination">
+            <img src="https://i.pinimg.com/originals/af/d6/cb/afd6cbd88c803eca8ee54a5c50ec121d.jpg" alt="Imphal"  width="1200" height="600">
+            <h2>Imphal</h2>
+            <p>Imphal, the capital of Manipur, is known for its beautiful Loktak Lake, historical monuments, and rich culture. It’s a peaceful destination for those interested in Northeast India's heritage.</p>
+        <a href="mysore.html" class="read-more"><button style="background-color: #ff6f61; color: #fff; border: none; padding: 10px 20px; font-size: 1rem; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;" 
+            onmouseover="this.style.backgroundColor='#ff3d2e';" 
+            onmouseout="this.style.backgroundColor='#ff6f61';">
+        Read More
+    </button>
+	</a>
+		</div>
+        <div class="destination">
+            <img src="https://1.bp.blogspot.com/--1ABaqOVPbU/XWF7fhhPo3I/AAAAAAAAAvA/DIBfy8_sUdkBAvB9-vLGerTdESf4hhnaACLcBGAs/s1600/52.png" alt="Dimapur"  width="1200" height="600">
+            <h2>Dimapur</h2>
+            <p>Dimapur, located in Nagaland, is known for its vibrant culture and rich history. It serves as a gateway to Nagaland, offering visitors a glimpse of tribal traditions and beautiful landscapes.</p>
+        <a href="mysore.html" class="read-more"><button style="background-color: #ff6f61; color: #fff; border: none; padding: 10px 20px; font-size: 1rem; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;" 
+            onmouseover="this.style.backgroundColor='#ff3d2e';" 
+            onmouseout="this.style.backgroundColor='#ff6f61';">
+        Read More
+    </button>
+	</a>
+		</div>
+        <div class="destination">
+            <img src="https://static.toiimg.com/photo/msid-85677828,width-96,height-65.cms" alt="Udaipur"  width="1200" height="600">
+            <h2>Udaipur</h2>
+            <p>Udaipur, known as the 'City of Lakes', is a romantic city in Rajasthan with its royal palaces, lakes, and temples. The City Palace and Lake Pichola are the city's prime attractions.</p>
+        <a href="mysore.html" class="read-more"><button style="background-color: #ff6f61; color: #fff; border: none; padding: 10px 20px; font-size: 1rem; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;" 
+            onmouseover="this.style.backgroundColor='#ff3d2e';" 
+            onmouseout="this.style.backgroundColor='#ff6f61';">
+        Read More
+    </button>
+	</a>
+		</div>
+        <div class="destination">
+            <img src="https://awalkintheworld.com/wp-content/uploads/2020/08/ki-monastery-spiti.jpg" alt="Spiti Valley"  width="1200" height="600">
+            <h2>Spiti Valley</h2>
+            <p>Spiti Valley, located in Himachal Pradesh, is a remote and picturesque region known for its rugged landscapes, Buddhist monasteries, and adventure tourism. It’s ideal for trekkers and nature lovers.</p>
+        <a href="mysore.html" class="read-more"><button style="background-color: #ff6f61; color: #fff; border: none; padding: 10px 20px; font-size: 1rem; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;" 
+            onmouseover="this.style.backgroundColor='#ff3d2e';" 
+            onmouseout="this.style.backgroundColor='#ff6f61';">
+        Read More
+    </button>
+	</a>
+		</div>
+        <div class="destination">
+            <img src="http://www.rajasthantourplanner.com/blog/wp-content/uploads/2017/12/Ranthambore-tiger-park-1.jpg" alt="Ranthambore"  width="1200" height="600">
+            <h2>Ranthambore</h2>
+            <p>Ranthambore National Park, located in Rajasthan, is famous for its tigers and rich wildlife. It offers excellent safari experiences amidst nature's beauty.</p>
+        <a href="mysore.html" class="read-more"><button style="background-color: #ff6f61; color: #fff; border: none; padding: 10px 20px; font-size: 1rem; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;" 
+            onmouseover="this.style.backgroundColor='#ff3d2e';" 
+            onmouseout="this.style.backgroundColor='#ff6f61';">
+        Read More
+    </button>
+	</a>
+		</div>
+        <div class="destination">
+            <img src="https://raivatinn.in/wp-content/uploads/2020/12/places-to-visit-junagadh.jpg" alt="Junagadh"  width="1200" height="600">
+            <h2>Junagadh</h2>
+            <p>Junagadh in Gujarat is famous for its historical forts, temples, and proximity to the Gir National Park, home of the Asiatic lions. It offers a blend of history and wildlife.</p>
+        <a href="mysore.html" class="read-more"><button style="background-color: #ff6f61; color: #fff; border: none; padding: 10px 20px; font-size: 1rem; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;" 
+            onmouseover="this.style.backgroundColor='#ff3d2e';" 
+            onmouseout="this.style.backgroundColor='#ff6f61';">
+        Read More
+    </button>
+	</a>
+		</div>
+        <div class="destination">
+            <img src="https://triptracker.in/wp-content/uploads/2023/08/upwk61848968-wikimedia-image-1024x683-1.jpg" alt="Jim Corbett National Park"  width="1200" height="600">
+            <h2>Jim Corbett National Park</h2>
+            <p>Jim Corbett National Park, located in Uttarakhand, is one of the oldest national parks in India. It is renowned for its Bengal tigers and rich biodiversity, making it a must-visit for wildlife enthusiasts.</p>
+        <a href="mysore.html" class="read-more"><button style="background-color: #ff6f61; color: #fff; border: none; padding: 10px 20px; font-size: 1rem; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;" 
+            onmouseover="this.style.backgroundColor='#ff3d2e';" 
+            onmouseout="this.style.backgroundColor='#ff6f61';">
+        Read More
+    </button>
+	</a>
+		</div>
+    </div>
+	 <button onclick="scrollToTop()">&uarr;</button>
+
+    <footer>
+        &copy; 2024 Explore India's Gems. All Rights Reserved.
+    </footer>
+	<script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
