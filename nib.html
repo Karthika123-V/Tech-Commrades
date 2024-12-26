@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Comrades Tours</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f1f1f1;
+            color: #333;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #2d3e50;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo {
+            text-align: center;
+        }
+
+        .logo img {
+            margin-bottom: 10px;
+        }
+
+        .logo span {
+            font-size: 30px;
+            font-weight: bold;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .nav-links a {
+            color: #fff;
+            font-size: 18px;
+            text-decoration: none;
+            margin: 0 20px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #f0c808;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(0, 45, 86, 0.7), rgba(54, 59, 66, 0.7)), url("https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?cs=srgb&dl=daylight-forest-glossy-443446.jpg&fm=jpg") no-repeat center center/cover;
+            text-align: center;
+            padding: 150px 20px;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            animation: fadeIn 6s ease-out;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+            animation: fadeIn 6s ease-out;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            background-image:"C:\Users\RANJITH KUMAR V\Downloads\tech-removebg-preview.png"
+            color: #333;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 3s, transform 3s;
+			
+        }
+
+        button:hover {
+            background-color: #e0b200;
+            transform: scale(1.1);
+        }
+
+        /* About Section */
+        .about {
+            background-color: #fff;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .about h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .about p {
+            font-size: 1.2em;
+            max-width: 900px;
+            margin: 0 auto;
+            color: #555;
+        }
+
+        /* Services Section */
+        .services {
+            background-color: #f4f4f4;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        .service-item {
+            background-color: #fff;
+            padding: 30px;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-item h3 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .service-item p {
+            font-size: 1.1em;
+            color: #777;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: #fff;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .contact h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .contact p {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #2d3e50;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-direction: column;
+                margin-top: 10px;
+            }
+
+            .nav-links a {
+                margin: 10px 0;
+            }
+
+            .hero h1 {
+                font-size: 2.5em;
+            }
+
+            .hero p {
+                font-size: 1.2em;
+            }
+
+            .service-item {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="main">
+            <div class="navbar">
+                <center><div class="logo">
+                    <center><img src="C:\Users\RANJITH KUMAR V\Downloads\tech-removebg-preview.png" height="150" width="150"></center>
+                    <span>TECH COMRADES</span>
+                </div></center>
+            </div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Welcome to Tech Comrades Tours</h1>
+        <p>Your gateway to unforgettable travel experiences.</p>
+        <button onclick="scrollToSection('services')">Explore Tours</button>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Tech Comrades Tours specializes in crafting personalized travel itineraries for tech enthusiasts. With over a decade of experience, we ensure each journey is memorable and tailored to your interests.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-item">
+            <h3>Customized Tech Tours</h3>
+            <p>Explore the world's leading tech hubs with our customized tour packages.</p>
+        </div>
+        <div class="service-item">
+            <h3>Group Travel Packages</h3>
+            <p>Join like-minded individuals on group tours to exciting destinations.</p>
+        </div>
+        <div class="service-item">
+            <h3>Corporate Travel Solutions</h3>
+            <p>We offer tailored travel solutions for corporate clients, ensuring seamless experiences.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@techcomradestours.com</p>
+        <p>Phone: +91 12345 67890</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Tech Comrades Tours. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
