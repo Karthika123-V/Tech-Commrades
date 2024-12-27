@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Comrades</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #2d3e50;
+            padding: 0px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+			font-family: math;
+        }
+
+        .logo {
+            color: #fff;
+            font-size: 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-links a {
+            color: #fff;
+            font-size: 18px;
+            text-decoration: none;
+            margin: 0 20px;
+            transition: color 0.5s;
+            font-weight: 600;
+        }
+
+        .nav-links a:hover {
+            color: #f0c808;
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?cs=srgb&dl=daylight-forest-glossy-443446.jpg&fm=jpg') no-repeat center center/cover;
+            height: 100vh;
+            color: #6f1b1b;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero h1 {
+            font-size: 4em;
+            font-weight: bold;
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+            animation: fadeIn 3s ease-out;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+            animation: fadeIn 3s ease-out;
+        }
+
+        .hero button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            background-color: #f0c808;
+            color: #333;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .hero button:hover {
+            background-color: #e0b200;
+            transform: scale(1.1);
+        }
+
+        /* About Section */
+        .about {
+            background-color: #cce0d0;
+            padding: 60px 20px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .about h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #333;
+			    background-color: cadetblue;
+
+        }
+
+        .about p {
+            font-size: 1.2em;
+            max-width: 900px;
+            margin: 0 auto;
+            color: #555;
+        }
+
+        /* Services Section */
+        .services {
+            background-color: #c4b5b578;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            color: #333;
+			    background-color: cadetblue;
+
+        }
+
+        .service-item {
+            background-color: #cce0d0;
+            padding: 30px;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        .service-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-item h3 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .service-item p {
+            font-size: 1.1em;
+            color: #777;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: #cce0d0;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .contact h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            color: #333;
+			    background-color: cadetblue;
+
+        }
+
+        .contact p {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        /* Blog Section */
+        .blog {
+            background-color: #f4f4f4;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .blog h2 {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        .blog-post {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        
+
+        .blog-post p {
+                background-color: #707a84;
+    padding: 20px 30px;
+    font-size: x-large;
+    font-family: fantasy;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #2d3e50;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-direction: column;
+                margin-top: 10px;
+            }
+
+            .nav-links a {
+                margin: 10px 0;
+            }
+
+            .hero h1 {
+                font-size: 2.5em;
+            }
+
+            .hero p {
+                font-size: 1.2em;
+            }
+
+            .service-item {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="navbar">
+		<p class="logo" style="align:left-side"><a href="https://imgbb.com/"><img src="https://i.ibb.co/RD4xCp4/tech-removebg-preview.png" alt="tech-removebg-preview" height="90"  width="90"/></a>Tech Comrades</p>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+                <a href="#blog">Blog</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+	
+        <h1><mark style="background-color:gray;">Welcome to Tech Comrades</mark></h1>
+        <<p><mark style="background-color:gray;">Your gateway to the latest in technology and innovation.</mark></p>
+        <button onclick="document.getElementById('services').scrollIntoView()">Explore Our Services</button>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Tech Comrades is a technology-focused community offering curated services and content to help tech enthusiasts and professionals grow their knowledge. We specialize in offering customized tech tours, consultations, and learning resources.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-item">
+            <h3>Customized Tech Tours</h3>
+            <p>Explore the world's leading tech hubs with our exclusive tours.</p>
+        </div>
+        <div class="service-item">
+            <h3>Tech Consulting</h3>
+            <p>Get personalized advice and consultation on the latest tech trends and tools.</p>
+        </div>
+        <div class="service-item">
+            <h3>Corporate Tech Solutions</h3>
+            <p>We offer enterprise-level tech solutions to streamline your business operations.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@techcomrades.com</p>
+        <p>Phone: +123 456 7890</p>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div >
+           <a href = "home.html"> <button class="blog-post" onclick="document.getElementById('blog').scrollIntoView()" style="background-color:#5f9ea0;" style="padding:20px 30px;" ><b>EXPLORE OUR BLOGS</b></button>
+        </a>
+		</div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
